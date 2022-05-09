@@ -1,0 +1,272 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background: rgba(11, 177, 243, 0.966);
+}
+
+header .logo img {
+    width: 150px;
+    margin: 0 15px;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li a{
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Source Sans Pro';
+    font-weight: 700;
+    margin: 0 20px;
+}
+
+header nav ul li a:hover{
+    transition: .15s ease;
+    color: rgba(238, 228, 228, 0.788);
+}
+
+/** primeira secão **/
+
+.bg-principal {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    font-family: 'Source Sans Pro';
+    color: white;
+    background-image: url(clinica_medica/recepcao.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-principal h1{
+    margin: 0 25px;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+/** SEGUNDA SECAO **/
+
+.section-options,
+#about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    margin:20px 50px;
+}
+
+.head-about{
+    text-align: center;
+    margin: 25px;
+    font-family: 'Source Sans Pro';
+}
+
+#contact h2,
+#about-us .head-about h2{
+    font-family: 'Source Sans Pro';
+
+    font-size: 1.7rem;
+    margin: 10px 0; 
+}
+
+#about-us .head-about p{
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+
+#about-us .content-about{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding:10px 25px 0px 25px;
+    box-shadow: 5px 2px 10px -2px;
+    border: 1px solid rgba(128, 128, 128, 0.637);
+    border-radius: 8px;
+}
+
+#about-us .content-about img {
+    width: 250px;
+}
+
+
+#about-us .content-about .info-about h3{
+    margin: 25px 0;
+}
+
+
+#about-us .content-about .info-about ul li{
+    list-style: disc;
+    margin: 10px;
+}
+
+/** terceira secao **/
+
+.section-options a {
+    font-family: 'Source Sans Pro';
+    font-weight: 700;
+    color:white;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    padding: 15px 40px;
+    background: rgb(0, 255, 242);
+    border-radius: 8px;
+}
+
+.section-options a:hover{
+    transition: .25s ease;
+    background: rgba(10, 238, 227, 0.849);
+    box-shadow: 0px 0px 5px 0px grey;
+}
+
+.section-options .head-especialidade{
+    text-align: center;
+    margin: 25px;
+    font-family: 'Source Sans Pro';
+}
+
+
+.section-options .head-especialidade h2{
+    margin: 20px 0;
+    font-family: 'Source Sans Pro';
+    font-size: 2rem;
+}
+
+.section-options .options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.section-options .options .card {
+    margin: 20px;
+    text-align: center;
+    padding: 1.2px;
+    border: 1px solid rgba(128, 128, 128, 0.603);
+    border-radius: 8px;
+    box-shadow: 3px 0px 8px 0px grey;
+    cursor: pointer;
+}
+
+.section-options .options .card:hover{
+    transform: scale(1.1);
+    transition: transform .25s ease;
+}
+
+.section-options .options figure figcaption{
+    font-family: 'Source Sans Pro';
+    font-weight: 400;
+    padding: 5px;
+    font-size: 1.4rem;
+}
+
+.section-options .options figure img{
+    width: 300px;
+}
+
+/** contact **/
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+
+#contact p{
+    font-family: 'Source Sans Pro';
+    font-size: 1.2rem;
+    margin: 7px 20px;
+    text-align: center;
+}
+
+#contact p a{
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+}
+
+
+/** footer **/
+
+
+footer {
+    background: rgb(10, 140, 163);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+footer img{
+    width: 150px;
+}
+
+footer p{
+    font-family: 'Source Sans Pro';
+    font-size: 1.2rem;
+    margin: 7px 20px;
+    color: white;
+    text-align: center;
+
+}
+
+footer p a{
+    color: white;
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/** queries **/
+
+@media (max-width: 1024px) {
+    img { width: calc( 100% / 8 ); }
+  }
+  
+
+@media (max-width: 535px){
+    .bg-principal
+    {  background-position: center; }
+
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    header nav ul {
+        padding: 10px;
+        border-top: 1px solid rgba(0, 0, 0, 0.76);
+    }
+}
+
+@media (max-width: 394px){
+    
+    header{
+        width: 100%;
+    }
+
+    header nav ul {
+        padding: 15px;
+        border:none;
+    }
+}

@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(243, 237, 237);
+}
+
+.especialidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+
+.especialidades .main-text h2{
+    font-family: 'Source Sans Pro';
+    text-align: center;
+    font-size: 2rem;
+
+}
+
+.especialidades .main-text nav{
+    padding: 30px 10px;
+}
+
+.especialidades .main-text nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-family: 'Source Sans Pro';
+
+}
+
+.especialidades .main-text nav ul li a{
+    margin: 15px;
+    color: black;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.especialidades .main-text nav ul li a:hover{
+    text-decoration: underline;
+}
+
+/** secões **/
+
+#ortopedia,
+#pediatria,
+#geriatria,
+#psicologia,
+#fisioterapia 
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 30px 5px;
+    font-family: 'Source Sans Pro';
+
+}
+
+.head-text{
+    margin: 20px;
+}
+
+
+.head-text h2 {
+    margin-bottom: 1rem; 
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.head-text p{
+    margin:0 10px;
+    font-size:1.1rem;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+}
+
+.content img{
+    width: 350px;
+}
+
+.content table{
+    border: crimson;
+    border-radius: 8px;
+}
+
+.content table thead th{
+    padding: 15px 35px;
+    color: white;
+    background: rgb(0, 201, 228);
+}
+
+.content table tbody td{
+    padding: 15px 30px;
+}
+
+.content table tbody tr:nth-child(2n+1){  
+    background: grey;
+}
+
+@media (max-width: 850px){
+    .content img{
+        display: none;
+    }
+}
